@@ -1,1 +1,3 @@
-![WIP:____NAME___](https://img.shields.io/static/v1?label=___NAME___&message=wip-___VERSION___&color=343434&logo=npm&style=for-the-badge)
+<p align="center">
+    <img src="https://img.shields.io/static/v1?label=___NAME___&message=wip-___VERSION___&color=343434&logo=npm&style=for-the-badge" alt="WIP:___NAME___" />
+</p>
