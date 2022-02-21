@@ -7,6 +7,7 @@ const $ = new Bunbun({
         await $.fs.read(`./makelib/templates/${file}`),
     readBTmpl: async (file: string) =>
         await $.fs.readBuffer(`./makelib/templates/${file}`),
+
     getPackages,
     hash: new Hash(),
     changedPackages: [] as string[],
