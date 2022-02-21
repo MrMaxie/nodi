@@ -1,0 +1,14 @@
+{
+    "name": "@nodi/core",
+    "version": "1.0.4",
+    "main": "./build/index.js",
+    "types": "./build/index.d.js",
+    "license": "Apache-2.0",
+    "engines": {
+        "node": ">=14"
+    },
+    "author": {
+        "name": "Maciej (Maxie) Mieńko",
+        "url": "https://github.com/MrMaxie"
+    }
+}

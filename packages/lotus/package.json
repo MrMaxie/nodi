@@ -1,0 +1,18 @@
+{
+    "name": "@nodi/lotus",
+    "version": "1.0.0",
+    "main": "./build/index.js",
+    "types": "./build/index.d.js",
+    "license": "Apache-2.0",
+    "engines": {
+        "node": ">=14"
+    },
+    "author": {
+        "name": "Maciej (Maxie) Mieńko",
+        "url": "https://github.com/MrMaxie"
+    },
+    "dependencies": {
+        "@nodi/core": "^1.0.1",
+        "@nodi/nyx": "^1.0.0"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "name": "nodi",
+    "private": true,
+    "license": "Apache-2.0",
+    "author": {
+        "name": "Maciej (Maxie) Mieńko",
+        "url": "https://github.com/MrMaxie"
+    },
+    "scripts": {
+        "build": "ts-node ./scripts/build.ts"
+    },
+    "engines": {
+        "node": ">=14"
+    },
+    "devDependencies": {
+        "@types/checksum": "0.1.33",
+        "@types/node": "17.0.18",
+        "esbuild": "0.14.23",
+        "lerna": "4.0.0",
+        "typescript": "4.5.5"
+    }
+}

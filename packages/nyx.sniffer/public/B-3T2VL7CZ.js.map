@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/B.tsx"],
+  "sourcesContent": ["import React from 'react';\r\n\r\nexport const B = () => {\r\n    return <strong>B?</strong>;\r\n};\r\n"],
+  "mappings": "+CAAA,MAAkB,OAEL,EAAI,IACN,wBAAC,SAAD,KAAQ",
+  "names": []
+}

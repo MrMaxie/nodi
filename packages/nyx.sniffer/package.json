@@ -1,0 +1,37 @@
+{
+    "name": "@nodi/nyx.sniffer",
+    "private": true,
+    "version": "1.0.0",
+    "main": "./build/index.js",
+    "types": "./build/index.d.js",
+    "license": "Apache-2.0",
+    "engines": {
+        "node": ">=14"
+    },
+    "author": {
+        "name": "Maciej (Maxie) Mieńko",
+        "url": "https://github.com/MrMaxie"
+    },
+    "dependencies": {
+        "@nodi/core": "^1.0.1",
+        "@nodi/nyx": "^1.0.0",
+        "@types/react-dom": "17.0.11",
+        "graphology": "0.23.2",
+        "graphology-communities-louvain": "2.0.0",
+        "graphology-layout-forceatlas2": "0.8.1",
+        "graphology-layout-noverlap": "0.4.1",
+        "react-dom": "17.0.2",
+        "sigma": "2.1.3",
+        "ts-morph": "13.0.2"
+    },
+    "devDependencies": {
+        "@types/node": "17.0.5",
+        "@types/react": "17.0.38",
+        "bunbun": "3.0.3",
+        "esbuild": "0.14.8",
+        "ngraph.graph": "19.1.0",
+        "ngraph.pixel": "2.4.1",
+        "react": "17.0.2",
+        "ts-node": "10.4.0"
+    }
+}

@@ -1,0 +1,53 @@
+group lol {
+    $color: true; // "red"
+    @color: true;  // "var(--color)"
+
+    /*
+        lol
+    */
+
+    def test {
+        +lol.test;
+        +test;
+
+        #is-test: boolean;
+        #color: color or red;
+
+        #color: 10;
+
+        font: 1px solid gray;
+        color: lol.color;
+
+        on hover {
+
+        }
+
+        if #is-test = true {
+            color: #color;
+        }
+
+        if not #is-test = true {
+            color: pink;
+        }
+
+        match #is-est {
+            false {
+                color: green;
+            }
+            true {
+                color: blue;
+            }
+            none {
+                color: red;
+            }
+        }
+    }
+}
+
+// jsx
+/*
+css.lol.color = // red
+<div css={css.lol.test({ isTest: true })} />
+*/
+
+

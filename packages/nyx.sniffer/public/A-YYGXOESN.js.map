@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/A.tsx"],
+  "sourcesContent": ["import React from 'react';\r\n\r\nconst B = React.lazy(() => import('./B').then(module => ({ default: module.B })));\r\n\r\nexport const A = () => {\r\n    return <strong>A?<B /></strong>;\r\n};\r\n"],
+  "mappings": "+CAAA,MAAkB,OAEZ,EAAI,UAAM,KAAK,IAAM,OAAO,mBAAO,KAAK,GAAW,EAAE,QAAS,EAAO,MAE9D,EAAI,IACN,wBAAC,SAAD,KAAQ,KAAE,wBAAC,EAAD",
+  "names": []
+}

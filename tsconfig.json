@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "module": "CommonJS",
+        "target": "ES6",
+        "moduleResolution": "Node",
+        "esModuleInterop": true,
+        "sourceMap": true,
+        "allowSyntheticDefaultImports": true,
+        "strictNullChecks": true,
+        "alwaysStrict": true,
+        "jsx": "react",
+        "outDir": "./build",
+        "declaration": true,
+        "emitDeclarationOnly": true
+    },
+    "exclude": [
+        "node_modules",
+        "build"
+    ],
+    "ts-node": {
+        "transpileOnly": true
+    }
+}
