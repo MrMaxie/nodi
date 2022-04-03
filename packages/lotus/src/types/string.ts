@@ -5,7 +5,7 @@ export const string = (props: Partial<{
     max: number;
 }> = {}) => {
     const { min, max } = Object.assign({
-        min: -Infinity,
+        min: 0,
         max: Infinity,
     }, props);
 

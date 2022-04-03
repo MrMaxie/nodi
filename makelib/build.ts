@@ -24,6 +24,8 @@ const buildPrepare = $.task('build.prepare', async ctx => {
     const mpkg = await readJson('./package.json');
 
     for (const pkg of ctx.changedPackages) {
+        $.logger.print`Building library: ${pkg}`;
+
         for (const [file, buffer] of files) {
             await $.consume($.fs.writeBuffer)(`./packages/${pkg}/${file}`, buffer);
         }

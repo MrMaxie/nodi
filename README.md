@@ -1,7 +1,7 @@
 # Nodi
 
 <!--PACKAGE_BADGE_BEGIN-->
-![bunbun](https://img.shields.io/static/v1?label=bunbun&message=1.0.15&color=CB3837&logo=npm&style=for-the-badge)
+![bunbun](https://img.shields.io/static/v1?label=bunbun&message=1.0.16&color=CB3837&logo=npm&style=for-the-badge)
 
 ![core](https://img.shields.io/static/v1?label=core&message=1.0.4&color=CB3837&logo=npm&style=for-the-badge)
 

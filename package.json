@@ -7,7 +7,7 @@
         "url": "https://github.com/MrMaxie"
     },
     "scripts": {
-        "build": "ts-node ./scripts/build.ts"
+        "build": "ts-node make build"
     },
     "engines": {
         "node": ">=14"

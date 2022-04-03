@@ -1,9 +1,16 @@
 import Path from 'node:path';
 import Fse from 'fs-extra';
 import Chokidar from 'chokidar';
+import { Bunbun } from './Bunbun';
 
-export class Fs {
+type RemoveOpts = {
+    attempts: [count: number, timeout: number];
+};
+
+export class Fs<Context> {
     cwd = process.cwd();
+
+    constructor(private $: Bunbun<Context>) {}
 
     resolve = (...path: string[]) =>
         Path.resolve(this.cwd, '.', ...path);
@@ -72,8 +79,25 @@ export class Fs {
         return await Fse.readFile(this.resolve(path));
     };
 
-    remove = async (path: string) => {
-        await Fse.remove(this.resolve(path));
+    remove = async (path: string, opts: Partial<RemoveOpts> = {}) => {
+        const fopts = Object.assign({
+            attempts: [5, 350],
+        }, opts) as RemoveOpts;
+
+        const maxAttempts = Math.max(fopts.attempts[0] || 1, 1);
+        let lastError: unknown;
+
+        for (let i = 0; i < maxAttempts; i++) {
+            try {
+                await Fse.remove(this.resolve(path));
+                return;
+            } catch (e) {
+                lastError = e;
+                await this.$.wait(fopts.attempts[1]);
+            }
+        }
+
+        throw lastError;
     };
 
     rename = async (source: string, target: string) => {

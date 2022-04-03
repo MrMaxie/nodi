@@ -1,10 +1,11 @@
+import { ExternalError } from './errors/ExternalError';
 import { UnknownAssertError } from './errors/UnknownAssertError';
 
 type Tester<T> =
     | ((value: unknown) => value is T)
     | ((value: unknown) => boolean);
 
-export class Type<T = unknown> {
+export class Type<T = unknown, Error extends ExternalError = ExternalError> {
     constructor(
         readonly name: string,
         private tester: Tester<T>,
@@ -25,6 +26,12 @@ export class Type<T = unknown> {
         } catch {
             return false;
         }
+    };
+
+    tryAssert = (value: unknown, map: {
+        [Code: Error<infer Codoe>]
+    }) => {
+
     };
 }
 

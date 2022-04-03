@@ -44,7 +44,7 @@ type Events<Context> = {
 export class Bunbun<Context> extends EventEmitter<Events<Context>> {
     readonly logger = spawnLogger();
 
-    readonly fs = new Fs();
+    readonly fs: Fs<Context> = new Fs(this);
     readonly server: Server<Context> = new Server(this);
 
     readonly debouce = Utils.debounce;
