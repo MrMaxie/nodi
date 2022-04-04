@@ -9,7 +9,7 @@ export class ExternalError<Code extends string, Params> extends Error {
     }
 }
 
-export type ErrorCode<E> = E extends ExternalError<infer Code, infer Params> ?
+// export type ErrorCode<E> = E extends ExternalError<infer Code, infer Params> ?
 
 type ExternalErrorTemplate<Code extends string, Params> = unknown extends Params ? {
     new(): ExternalError<Code, Params>;
